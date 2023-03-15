@@ -1,0 +1,7 @@
+# Build image
+docker build . -t tb_crypto_img
+
+#Run image
+docker run --rm --name tb_crypto -v "$(pwd)/output:/output" tb_crypto_img
+
+
